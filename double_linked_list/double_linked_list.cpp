@@ -138,6 +138,9 @@ bool DoubleLinkedList::search(int rollNo, Node** previous, Node** current) {
 		int rollNo;
 		cin >> rollNo;
 		cout << endl;
-		
-
-
+		if (DoubleLinkedList::deleteNode(rollNo) == false)
+			cout << "Record not found" << endl;
+		else
+			cout << "Record with roll number " << rollNo << "deleted" << endl;
+	}
+	
