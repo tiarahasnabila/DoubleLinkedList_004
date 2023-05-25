@@ -96,4 +96,10 @@ bool DoubleLinkedList::search(int rollNo, Node** previous, Node** current) {
 		return true;
 	}
 
+	bool DoubleLinkedList::listEmpty() {
+		return (START == NULL);
+	}
+
 	
+
+
