@@ -100,6 +100,19 @@ bool DoubleLinkedList::search(int rollNo, Node** previous, Node** current) {
 		return (START == NULL);
 	}
 
+	void DoubleLinkedList::ascending() {
+		if (listEmpty())
+			cout << "\nList is empt" << endl;
+		else {
+			cout << "\nRecords in ascending order of roll number are:" << endl;
+			Node* currentNode = START;
+			while (currentNode != NULL) {
+				cout << currentNode->noMhs << " " << currentNode->name << endl;
+				currentNode = currentNode->next;
+			}
+		}
+	}
+
 	
 
 
