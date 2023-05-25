@@ -199,4 +199,8 @@ bool DoubleLinkedList::search(int rollNo, Node** previous, Node** current) {
 					break;
 				}
 			}
-		
+			catch (exception& e) {
+				cout << "Check for the values entered." << endl;
+			}
+		}
+	}
